@@ -25,6 +25,10 @@
       "targetField": "title",
       "required": true
     },
+    "publishedDate": {
+      "type": "datetime",
+      "required": false
+    },
     "cover": {
       "type": "media",
       "multiple": false,
@@ -37,6 +41,10 @@
       "target": "api::author.author",
       "inversedBy": "articles"
     },
+    "authorName": {
+      "type": "string",
+      "required": false
+    },
     "category": {
       "type": "relation",
       "relation": "manyToOne",
@@ -46,11 +54,22 @@
     "tags": {
       "type": "json"
     },
+    "keywords": {
+      "type": "text"
+    },
     "seoImage": {
       "type": "media",
       "multiple": false,
       "required": false,
       "allowedTypes": ["images"]
+    },
+    "metaTitle": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "metaDescription": {
+      "type": "text",
+      "maxLength": 160
     },
     "canonicalUrl": {
       "type": "string"

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_guide_bullets",
+  "info": {
+    "displayName": "Guide bullet",
+    "icon": "dot-circle",
+    "description": "Bullet item for downloadable guide benefits"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
+
+
